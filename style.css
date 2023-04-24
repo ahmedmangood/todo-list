@@ -46,6 +46,9 @@ h2 {
   color: #302F2F;
   padding-left: 10px;
 }
+.form .input:focus::placeholder {
+  opacity: 0;
+}
 @media(max-width: 544px) {
   .form .input {
     width: 80%;
