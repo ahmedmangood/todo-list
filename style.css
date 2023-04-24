@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000b43;
+}
+.container {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+h2 {
+  text-align: center;
+  font-size: 49px;
+  font-style: italic;
+  color: #6e04c5;
+  width: 328px;
+  margin: 50px auto;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 4px;
+  text-shadow: 4px 6px 10px #000;
+  height: 200px;
+  padding: 54px;
+  background-color: #0b3361;
+  -webkit-text-stroke: thin #57ffc9;
+}
+.form {
+  text-align: center;
+  margin: 50px auto;
+  background-color: #122956;
+  height: 100px;
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid #57ffc9a1
+}
+.form .input{
+  width: 60%;
+  height: 50%;
+  position: relative;
+  border: 0px solid #afafaf;
+  border-radius: 15px;
+  margin-top: 23px;
+  font-size: 20px;
+  color: #302F2F;
+  padding-left: 10px;
+}
+@media(max-width: 544px) {
+  .form .input {
+    width: 80%;
+  }
+  .form .add,
+  .form button{
+    margin-top: 35px;
+  }
+}
+.form .add {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #185df0;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 0px solid #b6b6b6;
+  margin-left: 8px;
+}
+.form .add:hover{
+  background-color: #1135969a;
+  transition: 0.5s
+}
+.form button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ff4040;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 0px solid #b6b6b6;
+  margin-left: 8px;
+}
+.form button:hover{
+  background-color: #ff4040a8;
+  transition: 0.5s;
+}
+.tasks {
+  overflow: hidden;
+  text-align: center;
+  margin: 50px auto;
+  background-color: #122956;
+  width: 90%;
+  border-radius: 10px;
+}
+.tasks .task{
+  background-color: #fff;
+  border: 0px solid;
+  padding: 13px;
+  width: 77%;
+  text-align: left;
+  position: relative;
+  margin: 18px auto;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.tasks .task:hover{
+  background-color: #ffffff56;
+}
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+.tasks .task.done{
+  opacity: .4;
+  text-decoration: line-through;
+}
+.tasks .task span {
+  font-weight: bold;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
