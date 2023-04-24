@@ -46,7 +46,8 @@ h2 {
   color: #302F2F;
   padding-left: 10px;
 }
-.form .input:focus {
+.form .input[type="text"]:focus {
+  border: none;
   outline: none;
 }
 .form .input:focus::placeholder {
